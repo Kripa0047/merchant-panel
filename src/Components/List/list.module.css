@@ -1,0 +1,85 @@
+.subContanier{
+    width: 100%;
+}
+
+/* css for scroll */
+.subContanier{
+    scrollbar-face-color: #367CD2;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #FFFFFF;
+    scrollbar-track-color: #FFFFFF;
+    scrollbar-arrow-color: #FFFFFF;
+  }
+  
+  .subContanier::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .subContanier::-webkit-scrollbar-track {
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  .subContanier::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #337ab7; 
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  }
+
+.myTable   {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ffffff;
+    min-width: 720px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.myTable > thead    {
+    background-color: #6b96c2;
+    width: 100%;
+}
+
+.myTable > thead > tr > th  {
+    padding: 10px 0;
+}
+
+.myTable > tbody {
+    color: #000000;
+    font-size: 80%;
+    font-family: Nunito-Bold;
+}
+
+.myTable > tbody > tr {
+    border-bottom: 2px solid #d3d3d3;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.myTable > tbody > tr:hover {
+    background-color: #d3d3d3;
+}
+
+.myTable > tbody > tr > td {
+    height: 40px;
+}
+
+@font-face {
+    font-family: Nunito-Bold;
+    src: url('../../asserts/fonts/Nunito-Bold.ttf');
+}
+
+/* for mobile devices */
+@media only screen and (max-width: 760px) {
+    .subContanier   {
+        overflow-x: scroll;
+    }
+}

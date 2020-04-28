@@ -1,0 +1,52 @@
+.container  {
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.loginHeader    {
+    font-size: 170%;
+    margin: 10px;
+}
+
+.OTPHeader  {
+    margin-bottom: 20px;
+}
+
+.OTPInput   {
+    width: 25px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    background-color: #ffffff56;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 120%;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.resend {
+    margin: 10px;
+}
+
+.resend > span  {
+    color: #FDD110;
+    cursor: pointer;
+}
+
+.submit {
+    margin: 20px;
+}
+
+.submit > span  {
+    padding: 3px 30px 8px 30px;
+    background-color: #FDD110;
+    font-size: 150%;
+    border-radius: 5px;
+    color: #000000;
+    cursor: pointer;
+    font-weight: 500;
+}

@@ -1,0 +1,82 @@
+.container  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerContainer    {
+    height: 80px;
+}
+
+.navbarConatiner    {
+    width: 224px;
+    flex-shrink: 0;
+    transition: .3s;
+}
+
+.navContain     {
+    position: fixed;
+    width: 224px;
+    height: 100vh;
+    transition: .3s;
+}
+
+.componentsContainer    {
+    width: 100%;
+    background-image: url('../../asserts/images/doodle.jpg');
+    background-attachment: fixed;
+    min-height: calc(100vh - 80px);
+}
+
+.shrink {
+    width: 70px;
+}
+
+.layer  {
+    position: fixed;
+    background-color: #00000050;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: none;
+}
+
+/* for tables */
+@media only screen and (max-width: 1000px) {
+    .navbarConatiner    {
+        position: absolute;
+        left: -224px;
+        z-index: 100;
+        top: 0;
+    }
+
+    .menuListShow   {
+        left: 0;
+    }
+
+    .layerShow  {
+        display: block;
+    }
+}
+
+/* for mobile devices */
+@media only screen and (max-width: 760px) {
+    .componentsContainer{
+        min-height: calc(100vh - 47px);
+    }
+    
+    .headerContainer    {
+        height: 47px;
+    }
+
+    .navbarConatiner    {
+        width: 135px;
+    }
+    
+    .navContain     {
+        width: 135px;
+    }
+
+    .shrink {
+        width: 70px;
+    }
+}

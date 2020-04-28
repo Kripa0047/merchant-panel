@@ -1,0 +1,63 @@
+.container  {
+    background-color: #ffffff12;
+    width: 94%;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.inputField, .passField {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 3px solid #DFDFDF;
+    color: #DFDFDF;
+}
+
+.inputField::placeholder, .passField::placeholder    {
+    color: #DFDFDF;
+}
+
+.passField  {
+    width: 90%;
+    border: none;
+}
+
+.password   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #DFDFDF;
+    margin: 20px 0;
+}
+
+.password > img {
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.loginOptions   {
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginOptions > div {
+    color: #FDD110;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.submit {
+    margin: 25px 0 10px 0;
+}
+
+.submit > span  {
+    padding: 5px 40px 8px 40px;
+    background-color: #FDD110;
+    font-size: 140%;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}

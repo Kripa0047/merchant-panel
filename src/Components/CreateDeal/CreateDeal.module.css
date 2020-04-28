@@ -1,0 +1,263 @@
+.container  {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000050;
+    z-index: 5;
+}
+
+.contentContainer   {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 40%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.rowContainer   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.formHead   {
+    font-family: Nunito-Bold;
+}
+
+.close  {
+    cursor: pointer;
+}
+
+.close > img {
+    width: 15px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #4CA7DF;
+}
+
+.underBar   {
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    margin: 10px 0;
+}
+
+.selectBox  {
+    width: 45%;
+    outline: none;
+    border: none;
+    padding: 5px 0;
+    background-color: transparent;
+    color: #2b2b2b;
+    border-bottom: 2px solid #000000;
+    font-size: 85%;
+}
+
+.selectBox::placeholder {
+    color: #2b2b2b;
+}
+
+.selectBox > option  {
+    color: #000000;
+}
+
+.textLine   {
+    font-size: 80%;
+    color: #024477;
+    font-family: Nunito-Bold;
+}
+
+.add    {
+    font-size: 80%;
+    color: #ffffff;
+    padding: 2px 15px;
+    background-color: #024477;
+    border-radius: 5px;
+    font-family: Nunito-Bold;
+    cursor: pointer;
+}
+
+.upload {
+    margin: 20px 0;
+  }
+
+  .upload > span    {
+      margin: 0 auto;
+      width: 150px;
+      padding: 3px 20px;
+      display: flex;
+      align-items: center;
+      background-color: #024477;
+      color: #ffffff;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px;
+      font-weight: 500;
+  }
+
+  .uploadLabel [type=file] {
+    display: block;
+    font-size: 99px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+    cursor: pointer;
+}
+
+.tagContainer   {
+    border-radius: 4px;
+    border: 2px solid #024477;
+    height: 80px;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+}
+
+/* css for scroll */
+.tagContainer{
+    scrollbar-face-color: #367CD2;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #FFFFFF;
+    scrollbar-track-color: #FFFFFF;
+    scrollbar-arrow-color: #FFFFFF;
+  }
+  
+  .tagContainer::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .tagContainer::-webkit-scrollbar-track {
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  .tagContainer::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #337ab7; 
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  }
+
+.tagText    {
+    font-size: 80%;
+    font-family: Nunito-SemiBold;
+    margin: 0 10px;
+    height: fit-content;
+}
+
+.tagText > span {
+    color: #024477;
+    font-size: 120%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.toggleLable    {
+    color: #024477;
+    font-family: Nunito-Bold;
+    width: 50%;
+    text-align: start;
+    display: inline-flex;
+    align-items: center;
+}
+
+.radioContainer {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background-color: #C2C2C2;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.radioContainer > span  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: inherit;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+}
+
+.TCText {
+    color: #000000;
+    font-size: 65%;
+}
+
+.TCText > span  {
+    font-family: Nunito-Bold;
+    cursor: pointer;
+    color: #4CA7DF;
+}
+
+.registerButton {
+    padding: 3px 15px 5px 15px;
+    background-color: #FDD110;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: Nunito-ExtraBold;
+    font-size: 120%;
+}
+
+/* for tablets */
+@media only screen and (max-width: 1000px) {
+    .contentContainer   {
+        width: 60%;
+    }
+}
+
+/* for mobile devices */
+@media only screen and (max-width: 760px) {
+    .contentContainer   {
+        width: 90%;
+    }
+
+    .flexColumn {
+        flex-direction: column;
+    }
+
+    .registerButton {
+        margin: 10px 0;
+    }
+}
+
+@font-face {
+    font-family: Nunito-ExtraBold;
+    src: url('../../asserts/fonts/Nunito-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: Nunito-Bold;
+    src: url('../../asserts/fonts/Nunito-Bold.ttf');
+}
+
+@font-face {
+    font-family: Nunito-SemiBold;
+    src: url('../../asserts/fonts/Nunito-SemiBold.ttf');
+}   

@@ -1,0 +1,107 @@
+.container  {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000050;
+    z-index: 1;
+}
+
+.subContainer   {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.rowContainer, .searchContainer   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.formHead   {
+    font-family: Nunito-Bold;
+}
+
+.close  {
+    cursor: pointer;
+}
+
+.close > img {
+    width: 15px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #4CA7DF;
+}
+
+.searchContainer    {
+    margin: 0;
+    width: 100%;
+    background-color: rgba(76, 167, 223, 0.17);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+.searchContainer > img  {
+    height: 10px;
+    margin-right: 5px;
+}
+
+.searchContainer > input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: -webkit-fill-available;
+}
+
+.allTags, .tags    {
+    background-color: #F7F7F7;
+    text-align: start;
+    padding: 2px 5px;
+    font-size: 90%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.allTags > img, .tags > img  {
+    cursor: pointer;
+}
+
+.tags   {
+    margin: 2px 0;
+}
+
+.nextButton > img {
+    background-color: #FFD600;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* for tablets */
+@media only screen and (max-width: 1000px) {
+    .subContainer   {
+        width: 40%;
+    }
+}
+
+/* for mobile devices */
+@media only screen and (max-width: 760px) {
+    .subContainer   {
+        width: 90%;
+    }
+}

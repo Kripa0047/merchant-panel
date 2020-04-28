@@ -1,0 +1,44 @@
+.container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back   {
+    padding: 10px 13px 8px 10px;
+    background-color: #4CA7DF;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.back > img     {
+    height: 25px;
+}
+
+.menu   {
+    display: flex;
+    color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px 0;
+    margin-left: auto;
+}
+
+.menu > a   {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.login, .register   {
+    padding: 3px 15px 8px 15px;
+    cursor: pointer;
+}
+
+.login  {
+    background-color: #FDD110;
+}
+
+.register   {
+    background-color: #4CA7DF;
+}

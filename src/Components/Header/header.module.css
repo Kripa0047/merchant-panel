@@ -1,0 +1,111 @@
+.container  {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 2%;
+    align-items: center;
+    background-color: #024477;
+    position: fixed;
+    top: 0;
+    width: 96%;
+    z-index: 5;
+}
+
+.mainLogo, .mainLogoDash {
+    height: 66px;
+}
+
+.menuIcon   {
+    display: none;
+}
+
+.adminContainer {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 120%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.adminContainer:hover      {
+    background-color: #aaaaaa;
+}
+
+.adminContainer > div {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.adminContainer > img   {
+    margin-bottom: -5px;
+    height: 15px;
+}
+
+.dropdownConatiner  {
+    position: absolute;
+    background-color: #ffffff;
+    padding: 5px 0;
+    top: 50px;
+    border-radius: 8px;
+    display: none;
+    margin: 0 !important;
+    right: 0;
+    width: max-content;
+}
+
+.dropItem   {
+    padding: 0 10px;
+    transition: .3s;
+}
+
+.dropItem:hover {
+    background-color: #cacaca;
+}
+
+.displayNone    {
+    display: block;
+}
+
+/* for tablets */
+@media only screen and (max-width: 1000px) {
+    .mainLogo {
+        display: none;
+    }
+    
+    .menuIcon   {
+        display: block;
+        padding: 10px 0;
+        height: 50px;
+        cursor: pointer;
+    }
+}
+
+
+/* for mobile devices */
+@media only screen and (max-width: 760px) {
+    .mainLogoDash {
+        height: 33px;
+    }
+
+    .menuIcon   {
+        padding: 5px 0;
+        height: 27px;
+    }
+
+    .adminContainer {
+        padding: 3px 8px;
+        font-size: 80%;
+    }
+
+    .adminContainer > img   {
+        margin-bottom: -3px;
+        height: 10px;
+    }
+
+    .dropdownConatiner  {
+        top: 30px;
+    }
+}

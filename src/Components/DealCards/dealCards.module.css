@@ -1,0 +1,181 @@
+.container  {
+    background-color: #ffffff;
+    margin: 10px 0;
+    width: 31.33%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000025;
+}
+
+.cardBody   {
+    padding: 4%;
+}
+
+.couponImage    {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.couponImage > img    {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.quantity   {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-size: 65%;
+    padding: 0 5px;
+    font-family: Nunito-bold;
+}
+
+.cardDetails    {
+    display: flex;
+    align-items: flex-start;
+    color: #024477;
+    font-size: 80%;
+}
+
+.cardDetails > img  {
+    width: 10%;
+    height: 10%;
+    margin-right: 4px;
+}
+
+.cardDetails > div  {
+    text-align: left;
+}
+
+.bar    {
+    width: 80%;
+    border-bottom: 1px solid #DCDCDC;
+    margin: 5px auto;
+}
+
+.timeContainer  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time   {
+    color: #024477;
+    font-size: 70%;
+    font-family: Nunito-extraBold;
+}
+
+.happyHours {
+    font-size: 80%;
+    background-color: #FFD502;
+    padding: 1px 4px;
+    border-radius: 3px;
+}
+
+.dateContainer  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 90%;
+    margin: 0 8%;
+}
+
+.date   {
+    display: flex;
+    align-items: center;
+    font-size: 80%;
+    font-family: Nunito-extraBold;
+}
+
+.date > img {
+    height: 80%;
+    margin-right: 5px;
+}
+
+.verticalBar    {
+    padding: 4% 0;
+    border-right: 2px solid #707070;
+}
+
+.bottomContainer    {
+    background-color: #E3E3E3;
+    border-radius: 0px 0px 10px 10px;
+    padding: 5px 10px;
+}
+
+.editConatiner  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.editConatiner > div {
+    width: 30%;
+    padding: 2px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.editConatiner > div > img {
+    height: 70%;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.edit {
+    background-color: #ffffff;
+}
+
+.block {
+    background-color: #D20000;
+}
+
+.accept {
+    background-color: #00AE46;
+}
+
+.number {
+    width: 10% !important;
+    font-family: Nunito-bold;
+}
+
+.number > span  {
+    background-color: #FFD502;
+    border-radius: 50% !important;
+    padding: 0 7px;
+}
+
+
+.change {
+    font-family: Nunito-bold;
+    background: #4CA7DF;
+    margin-left: auto;
+}
+
+
+
+@font-face {
+    font-family: Nunito-bold;
+    src: url('../../asserts/fonts/Nunito-Bold.ttf');
+}
+
+@font-face {
+    font-family: Nunito-extraBold;
+    src: url('../../asserts/fonts/Nunito-ExtraBold.ttf');
+}
+
+
+/* for tablets */
+@media only screen and (max-width: 1000px) {
+    .container  {
+        width: 48%;
+    }
+}
+
+/* for mobile devices */
+@media only screen and (max-width: 760px) {
+    .container  {
+        width: 100%;
+    }
+}

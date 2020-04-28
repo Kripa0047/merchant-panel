@@ -1,0 +1,55 @@
+.container  {
+    padding: 20px 1%;
+    width: 21%;
+    margin: 1%;
+    background: #FFFFFF;
+    box-shadow: 9px 8px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.container > a  {
+    text-decoration: none;
+}
+
+.cardBody   {
+    color: #000000;
+}
+
+.cardBody > img  {
+    width: 25%;
+}
+
+.cardHeader {
+    font-weight: 600;
+    font-size: 120%;
+}
+
+.cardText   {
+    margin-top: 5px;
+    font-size: 80%;
+}
+
+
+/* for tablets */
+@media only screen and (max-width: 1000px) {
+    .container  {
+        width: 29.33%;
+        margin: 1%;
+    }
+}
+
+/* for modile devices */
+@media only screen and (max-width: 760px) {
+    .container  {
+        width: 46%;
+        margin: 1%;
+    }
+
+    .cardHeader {
+        font-size: 100%;
+    }
+
+    .cardText   {
+        font-size: 60%;
+    }
+}

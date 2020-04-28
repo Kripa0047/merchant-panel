@@ -1,0 +1,44 @@
+.container  {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #42424290;
+    top: 0;
+    z-index: 1;
+}
+
+.popUp  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.close  {
+    position: absolute;
+    right: 10px;
+    padding: 5px;
+    background-color: #4CA7DF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.alert  {
+    font-size: 180%;
+    font-weight: 500;
+}
+
+.alertText  {
+    margin: 20px 5%;
+}
+
+/* css for mobile devices */
+@media only screen and (max-width: 760px) {
+    .popUp  {
+        width: 250px;
+    }
+}

@@ -1,0 +1,39 @@
+.container  {
+    padding: 20px 5% 0 5%;
+    transition: .3s;
+}
+
+.container:hover   {
+    background-color: #013b68 !important;
+}
+
+.container > a  {
+    text-decoration: none;
+}
+
+.cardBody   {
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 20px;
+}
+
+.cardBody > img {
+    width: 30px;
+}
+
+.cardHeader {
+    font-size: 120%;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+
+/* for mobile devices */
+@media only screen and (max-width: 760px) {
+    .cardBody > img {
+        width: 20px;
+    }
+
+    .cardHeader {
+        font-size: 90%;
+    }
+}

@@ -1,0 +1,251 @@
+.container   {
+    overflow-y: auto;
+    max-height: 70vh;
+}
+
+/* css for scroll */
+.container{
+    scrollbar-face-color: #367CD2;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #FFFFFF;
+    scrollbar-track-color: #FFFFFF;
+    scrollbar-arrow-color: #FFFFFF;
+  }
+  
+  .container::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .container::-webkit-scrollbar-track {
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  .container::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #337ab7; 
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  }
+
+.subContainer   {
+    background-color: #ffffff25;
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.rowContainer, .middleRowContainer, .dayRowContainer  {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    align-items: center;
+}
+
+.selectBox  {
+    width: 45%;
+    outline: none;
+    border: none;
+    padding: 5px 0;
+    background-color: transparent;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    font-size: 100%;
+}
+
+.selectBox::placeholder {
+    color: #ffffff;
+}
+
+.selectBox > option  {
+    color: #000000;
+}
+
+.showPassword   {
+    height: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.middleRowContainer > input     {
+    width: 30%;
+}
+
+.middleRowContainer > select    {
+    width: 30%;
+}
+
+.addButton  {
+    text-align: right;
+}
+
+.addButton > span   {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0 10px 2px 10px;
+    font-size: 90%;
+    font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* for check box */
+/* The container */
+.containerBox {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .containerBox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 3px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .containerBox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .containerBox input:checked ~ .checkmark {
+    background-color: #4CA7DF;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .containerBox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .containerBox .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .dayRowContainer  {
+      margin: 0;
+      align-items: center;
+      width: 50%;
+  }
+
+  .upload {
+    margin: 20px 0;
+  }
+
+  .upload > span    {
+      margin: 0 auto;
+      width: 150px;
+      padding: 3px 20px;
+      display: flex;
+      align-items: center;
+      background-color: #ffffff;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px;
+      font-weight: 500;
+  }
+
+  .uploadLabel [type=file] {
+    display: block;
+    font-size: 99px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+    cursor: pointer;
+}
+
+.TCText {
+    color: #ffffff;
+}
+
+.TCText > span  {
+    color: #FDD110;
+    cursor: pointer;
+}
+
+.registerButton {
+    padding: 3px 15px 5px 15px;
+    background-color: #FDD110;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* for tablets */
+@media only screen and (max-width: 1000px) {
+  .container   {
+    overflow-y: auto;
+    max-height: 60vh;
+  }
+}
+
+
+/* for mobile devices */
+@media only screen and (max-width: 760px) {
+    .container   {
+        max-height: 55vh;
+    }
+
+    .checkDays  {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .checkDays > label  {
+        margin: 5px 3px;
+    }
+
+    .flexColumn {
+        flex-direction: column;
+    }
+}
